@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/Salsas.css">
+
+    <!--fuentes Adobe-->
+    <!--fuente: giddyup-std-->
+    <link rel="stylesheet" href="https://use.typekit.net/tzf2uto.css">
+    <!--fuente: indie-flowe-->
+    <link rel="stylesheet" href="https://use.typekit.net/xgm8zmr.css">
+
+    <!--agrega el icono en la pestaña del navegador-->
+    <link rel="icon" href="assets/gato.ico">
+
+    <title>Sweet Pets - Salsa Pollo</title>
+
+</head>
+
+<body>
+
+    <div id="menu1" class="menu1"></div>
+
+    <!--Imagendes del perro - logo y gato-->
+    <div class="inicio_next">
+        <a href="SalsaHigado.html"><img class="perro" src="assets/PerroCartel.png" alt="inicio"></a>
+        <img class="logo" src="assets/LogoPets_trasparente.png" alt="logo">
+        <a href="SalsaCerdo.html"><img class="gato" src="assets/GatoCartel.png" alt="siguiente"></a>
+    </div>
+
+    <!--Conteneror principal-->
+    <div class="contenedor_salsa">
+        <img src="assets/Impagen_FrascoChicken.png">
+        <h1 class="titulo"><span>Swet Peets</span> ~ SALSA DE POLLO</h1>
+        <p class="texto">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus, perferendis recusandae alias tenetur ipsa ipsam aspernatur dolor provident consectetur, a harum accusantium earum vel voluptatem minus molestiae omnis facere consequuntur.</p>
+    </div>
+
+    <!--información de los tabuladores-->
+    <div class="tab">
+        <button class="tablinks det1" onclick="openCity(event, 'Detalle1')">Detalle1</button>
+        <button class="tablinks det2" onclick="openCity(event, 'Detalle2')">Detalle2</button>
+    </div>
+
+    <!-- Tabulador1 -->
+    <div id="Detalle1" class="tabcontent tab1" alt="frasco">
+        <h3>Detalle1</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident excepturi repudiandae, dolorum ducimus odit rerum pariatur voluptas voluptate tenetur reiciendis, quis delectus odio maxime obcaecati dicta perspiciatis laudantium quasi ab?</p>
+    </div>
+
+    <!-- Tabulador2 -->
+    <div id="Detalle2" class="tabcontent tab2">
+        <h3>Detalle2</h3>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Distinctio, deserunt? Dolores excepturi minus beatae rerum eos. Magni ab vel voluptatem odit pariatur ipsam eos suscipit dolorum, ipsum libero ex molestiae.</p>
+    </div>
+
+    <!--Script de los tabuladores-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script>
+        function openCity(evt, cityName) {
+            var i, tabcontent, tablinks;
+            tabcontent = document.getElementsByClassName("tabcontent");
+            for (i = 0; i < tabcontent.length; i++) {
+                tabcontent[i].style.display = "none";
+            }
+            tablinks = document.getElementsByClassName("tablinks");
+            for (i = 0; i < tablinks.length; i++) {
+                tablinks[i].className = tablinks[i].className.replace(" active", "");
+            }
+            document.getElementById(cityName).style.display = "block";
+            evt.currentTarget.className += " active";
+        }
+    </script>
+
+    <!--inseta en menu en la pagina HTML-->
+    <script src="js/menu.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,169 @@
+    /* Formatos GENERALES */
+    
+    * {
+        box-sizing: border-box;
+    }
+    
+    body {
+        background-color: white;
+        margin-top: 0%;
+        margin-right: auto;
+        margin-left: auto;
+        font-family: Roboto, sans-serif;
+    }
+    /* Imagen de portada principal */
+    
+    .titulo img {
+        width: 85rem;
+        margin-top: 0;
+        height: 40rem;
+        display: block;
+    }
+    /* Formatos titulos Slasas - Snacks y Otros */
+    
+    .renglon_oculto {
+        color: white;
+    }
+    
+    .titulo_salsas {
+        background-image: linear-gradient(270deg, white 1%, #ffd8dd 8%, #ffcad5 16%, #ffb6c9 33.33%, #f29db9 50%, #de85ab 66.67%, #cc73a3 83.33%, #be679f 100%);
+        text-align: left;
+        font-size: 35px;
+        font-family: giddyup-std, sans-serif;
+        margin-top: 0;
+        margin-bottom: 0%;
+        margin-right: 70%;
+        padding-left: 2rem;
+        padding-top: 0.5rem;
+        padding-bottom: 0.5rem;
+        color: white;
+    }
+    
+    .texto_salsas {
+        margin-left: 30px;
+    }
+    /* Imagenes sobre de los titulos Slasas - Snacks y Otros*/
+    
+    .sections img {
+        margin-bottom: 0;
+        margin-left: 30px;
+        width: 70px;
+        display: block;
+    }
+    /* EStilo del LOS GRID */
+    /* CONTENEDORES - formatos en comun*/
+    
+    .contenedor {
+        margin-bottom: 1rem;
+        margin-left: auto;
+        margin-right: auto;
+        grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+        padding: 1rem;
+        display: grid;
+        gap: 1rem;
+        justify-items: center;
+    }
+    /* Formato de la Figura de los contenedores */
+    
+    .contenedor div {
+        border-radius: 15px;
+        padding: 1rem;
+        background-color: #ea899a;
+        width: 100%;
+        box-shadow: rgb(0 0 0 / 50%) 5px 5px 10px;
+        transition: 1s;
+    }
+    
+    .contenedor div:hover {
+        background-color: #cf3c57;
+        cursor: pointer;
+        text-shadow: 0 0 10px rgb(253, 253, 253), 0 0 5px rgb(253, 253, 253);
+    }
+    /* Formato de las Imagenes en los contenedores*/
+    
+    .contenedor img {
+        width: 100%;
+        border-radius: 10px;
+        padding: 0.8%;
+    }
+    /* Formatos de los textos en el contenerdores*/
+    
+    .contenedor h2 {
+        text-align: center;
+        margin-bottom: 2%;
+        margin-top: 0%;
+        font-family: indie-flower, sans-serif;
+        font-style: normal;
+    }
+    /*  */
+    /* Ancho de los CONTENEDORES */
+    /* contenedor 1 */
+    
+    .cont1 {
+        width: 1200px;
+    }
+    /* contenedor 2 */
+    
+    .cont2 {
+        width: 1000px;
+    }
+    /* contenedor 3 */
+    
+    .cont3 {
+        width: 900px;
+    }
+    /* Estilo del PIE DE PAGINA */
+    
+    .piepagina {
+        background-color: rgb(51, 51, 51);
+        font-size: 1.1rem;
+        margin-top: 10rem;
+        padding: 0.2rem 0px;
+        width: 100%;
+        bottom: 0px;
+        padding-top: 20px;
+        margin-bottom: 5px;
+        text-align: center;
+    }
+    
+    footer .fa-instagram,
+    .fa-at {
+        font-size: 30px;
+        color: lightcyan;
+    }
+    
+    footer .fa-at {
+        margin-left: 20px;
+    }
+    
+    .instagram a,
+    .correo a {
+        text-decoration: none;
+        font-family: inherit;
+        color: lightcyan;
+        transition: 0.5s;
+    }
+    
+    .piepagina a:hover {
+        color: #ea899a;
+    }
+    
+    div .donatom {
+        display: inline;
+        font-size: 12px;
+        color: gray;
+    }
+    /*estilo Boton Arriba */
+    
+    .ir-arriba {
+        display: none;
+        padding: 15px;
+        background: #e0687e;
+        font-size: 20px;
+        color: #fff;
+        cursor: pointer;
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        box-shadow: 3px 3px 7px 1px grey;
+    }

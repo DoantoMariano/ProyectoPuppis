@@ -1,0 +1,158 @@
+/* Formatos generales */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Roboto, sans-serif;
+}
+
+
+/* Estilos para el perro - gato del menu*/
+
+.menu {
+    z-index: 1;
+}
+
+.inicio_next {
+    position: relative;
+    top: 10px;
+    height: 110px;
+    width: 100%;
+}
+
+.inicio_next .perro,
+.inicio_next .gato,
+.inicio_next .logo {
+    width: 110px;
+    position: absolute;
+    transition: 0.5s;
+}
+
+.inicio_next .perro:hover,
+.inicio_next .gato:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+.inicio_next .perro {
+    left: 100px;
+    top: 10px
+}
+
+.inicio_next .gato {
+    right: 100px;
+    top: 5px
+}
+
+.inicio_next .logo {
+    left: 600px;
+    top: 10px
+}
+
+
+/* Estilos del cuerpo principal - Imagne Producto y texto */
+
+
+/* Borde superior del contenedor */
+
+.contenedor_salsa {
+    margin-top: 45px;
+    width: auto;
+    padding-top: 1rem;
+    padding-bottom: 2rem;
+    border-top: 5px solid rgb(153, 22, 125);
+}
+
+
+/* Imagen del contenedor */
+
+.contenedor_salsa img {
+    margin-top: 0;
+    float: left;
+    margin-left: 8rem;
+    width: 200px;
+    border-radius: 10px;
+    box-shadow: 5px 7px 10px gray;
+}
+
+
+/* Titulo del contenedor */
+
+.contenedor_salsa h1 {
+    margin-top: 30px;
+    margin-left: 25rem;
+    margin-bottom: 1rem;
+    color: #e94563;
+    font-family: indie-flower, sans-serif;
+    font-style: normal;
+    font-size: 50px;
+    text-shadow: 3px 3px 3px gray;
+}
+
+.contenedor_salsa h1 span {
+    font-family: giddyup-std, sans-serif;
+    font-style: normal;
+    font-size: 70px;
+    text-shadow: 1px 1px 2px gray;
+}
+
+
+/* Texto del contenedor */
+
+.contenedor_salsa p {
+    margin-right: 1rem;
+    margin-left: 25rem;
+    margin-bottom: 5rem;
+}
+
+
+/* Estilo de los tabuladores de información */
+
+.tab {
+    overflow: hidden;
+}
+
+
+/* Style the buttons inside the tab */
+
+.tab button {
+    background-color: inherit;
+    float: left;
+    border: none;
+    border-top: 2px solid transparent;
+    cursor: pointer;
+    padding: 5px 16px;
+    font-size: 17px;
+    margin: 5px;
+    margin-bottom: 0;
+}
+
+
+/* Change background color of buttons on hover */
+
+.tab button:hover {
+    color: #ee3859;
+    border-top: 2px solid #ec6e85;
+}
+
+.tab button.active {
+    color: rgb(3, 3, 3);
+    border-top: 1px solid #ec6e85;
+    background-color: rgb(131, 194, 194);
+}
+
+
+/* Style the tab content */
+
+.tabcontent {
+    padding: 8px 10px 8px;
+    margin-top: 0;
+    background-color: rgb(131, 194, 194);
+    height: auto;
+}
+
+.tab2 {
+    display: none;
+}

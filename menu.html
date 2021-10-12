@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/MenuPets.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <!-- Barra de Menu -->
+            <ul class="menu">
+                <li><a href="SPets_Index.html">Inicio</a></li>
+                <li><a href="#">Nosotros</a></li>
+                <li><a href="#">Productos</a>
+                    <ul>
+                        <li><a href="#salsas">Salsas</a>
+                            <ul>
+                                <li><a href="SalsaCarne.html">Carne</a></li>
+                                <li><a href="SalsaHigado.html">Salsa Hígado</a></li>
+                                <li><a href="SalsaPollo.html">Pollo</a></li>
+                                <li><a href="SalsaCerdo.html">Cerdo</a></li>
+                                <li><a href="SalsaAtun.html">Atún</a></li>
+                                <li><a href="SalsaGoldenPaste.html">Golden Paste</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#snacks">Snacks</a>
+                            <ul>
+                                <li><a href="#">Snacks 1</a></li>
+                                <li><a href="#">Snacks 2</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#otros_prd">Otros</a>
+                            <ul>
+                                <li><a href="#">Otros 1</a></li>
+                                <li><a href="#">Otros 2</a></li>
+
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </header>
+</body>
+
+<!--script para deslizamiento de pantalla (scroll-behavior)-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script>
+    $(document).ready(function() {
+        // Add smooth scrolling to all links
+        $("a").on('click', function(event) {
+
+            // Make sure this.hash has a value before overriding default behavior
+            if (this.hash !== "") {
+                // Prevent default anchor click behavior
+                event.preventDefault();
+
+                // Store hash
+                var hash = this.hash;
+
+                // Using jQuery's animate() method to add smooth page scroll
+                // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+                $('html, body').animate({
+                    scrollTop: $(hash).offset().top
+                }, 800, function() {
+
+                    // Add hash (#) to URL when done scrolling (default click behavior)
+                    window.location.hash = hash;
+                });
+            } // End if
+        });
+    });
+</script>
+
+</html>
